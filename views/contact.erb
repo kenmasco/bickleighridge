@@ -1,0 +1,67 @@
+
+
+  <div class= "row contact">
+    <div class="col-xs-12 col-sm-10 col-md-6 contact-form">
+      <h2>Contact Us</h2>
+      <form class="form-horizontal" role="form" action='/message' method='post'>
+        <div class="form-group">
+          <label for="subject" class="col-sm-2 control-label">Subject</label>
+          <div class="col-sm-7">
+            <input type="text" name="subject" class="form-control" id="inputEmail3" placeholder="Enter Subject">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="usermessage" class="col-sm-2 control-label">Message</label>
+          <div class="col-sm-7">
+            <textarea name="message" class="form-control" rows="4" id="iusermessage" placeholder="Enter your message here"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Your Email*</label>
+          <div class="col-sm-7">
+            <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Enter your email address">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-7">
+            <button type="submit" class="btn btn-default">Send</button>
+          </div>
+        </div>
+      </form>
+    </div><!-- col -->
+
+    <div class="col-xs-12 col-sm-10 col-md-6 contact-form">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-12" id="map-canvas">
+            </div>
+          </div>
+          <div class="row contact contact-details">
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              <strong><i class="fa fa-envelope orange"></i></strong>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10">
+              <address>
+                <strong>Bickleigh Ridge Ltd.</strong><br>
+                Yew Gate, Love Lane,<br>
+                Donnington,<br>
+                Newbury,<br>
+                Berkshire.<br>
+                RG14 2JG<br>
+              </address>
+            </div>
+          </div>
+          <div class="row contact-details">
+            <div class="col-xs-1 col-sm-1 col-md-1">
+              <strong><i class="fa fa-phone orange"></i></strong>
+            </div>
+            <div class="col-xs-10 col-sm-10 col-md-10">
+              <address><strong>01635 45814</strong></address> 
+            </div>     
+          </div>
+        </div>
+      </div>
+    </div><!-- col -->
+  </div><!-- row -->
