@@ -28,17 +28,34 @@
 
   <body>
     <div class="container">
-      <div class="col-xs-4">
+
+      <div class="row visible-xs company_logo_responsive">
+        <div class="col-xs-4 col-xs-offset-4">
+          <img src="/images/logo.png" class="img-responsive">
+        </div>
       </div>
-      <div class="col-xs-4 company_logo">
-        <img src="/images/logo.png" class="img-responsive">
+
+      <div class="row hidden-xs">
+        <div class="col-xs-3 col-xs-offset-9 company_logo">
+          <img src="/images/logo.png" class="img-responsive">
+        </div>
+      </div>
+
+      <ul class="nav nav-tabs" id="tabList">
+        <li class="active"><a href="#about" data-togle="tab"><h4 class="aboutTitle"><i class="fa fa-tasks"></i> About</h4></a></li>
+        <li><a href='#partners' data-togle="tab"><h4 class="partnersTitle"><i class="fa fa-sitemap"></i> Partners</h4></a></li>
+        <li><a href="#contact" data-togle="tab"><h4 class="contactTitle"><i class="fa fa-pencil"></i> Contact</h4></a></li>
+      </ul>
+
+      <div id="myTabContent" class="tab-content">
+        <%= yield %>
       </div>
     </div>
     <nav class="navbar navbar-default navbar-fixed-bottom hidden-xs" role="navigation">
       <div class="container">
         ©Bickleigh Ridge 2014.
       </div>
-    </nav>
+  </nav>
     </div>
   </body>
   <script>

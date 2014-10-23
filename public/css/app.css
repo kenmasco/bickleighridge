@@ -1,11 +1,15 @@
 .company_logo {
-  margin-bottom: -50px;
-  margin-top: 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .company_logo_responsive{
-  margin-top: 25px;
-  margin-bottom: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
